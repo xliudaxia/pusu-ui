@@ -5,7 +5,7 @@ Pure  React UI Library.
 ## 安装已经发布的组件库来试试
 
 ~~~javascript
-npm install peanut-ui --save
+请稍后……
 ~~~
 
 ### 使用
