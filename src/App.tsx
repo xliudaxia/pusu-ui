@@ -1,29 +1,32 @@
-import Button, { ButtonType, ButtonSize } from "./components/Button";
 import Menu from "./components/Menu/Menu";
 import MenuItem from "./components/Menu/MenuItem";
+import SubMenu from "./components/Menu/SubMenu";
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Menu mode="vertical" defaultIndex={0} onSelect={(index)=>alert(index)}>
-          <MenuItem index={0}>
+        <Menu defaultIndex={0}  >
+          <MenuItem>
             cool link 1
           </MenuItem>
-          <MenuItem index={1} disabled>
+          <MenuItem disabled>
             cool link 2
           </MenuItem>
-          <MenuItem index={2}>
+          <SubMenu  title="下拉菜单">
+            <MenuItem>
+            下拉菜单1 
+            </MenuItem>
+            <MenuItem>
+            下拉菜单2 
+            </MenuItem>
+
+          </SubMenu>
+          <MenuItem>
             cool link 3
           </MenuItem>
         </Menu>
-        <Button className="douban" autoFocus >默认按钮</Button>
-        <Button btnType={ButtonType.Danger}>危险按钮</Button>
-        <Button size={ButtonSize.Smaill}>小按钮</Button>
-        <Button btnType={ButtonType.Primary} >primay 按钮</Button>
-        <Button btnType={ButtonType.Link} target="_blank" href="www.baidu.com">Baidu Link</Button>
-        <Button disabled btnType={ButtonType.Link} href="www.baidu.com">Baidu Link</Button>
       </header>
     </div>
   );
