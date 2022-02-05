@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Menu defaultIndex={0}  >
+        <Menu defaultIndex={'0'} mode="vertical" defaultOpenSubMenus={['2']}>
           <MenuItem>
             cool link 1
           </MenuItem>
@@ -21,7 +21,6 @@ function App() {
             <MenuItem>
             下拉菜单2 
             </MenuItem>
-
           </SubMenu>
           <MenuItem>
             cool link 3
