@@ -1,12 +1,18 @@
+import { library } from '@fortawesome/fontawesome-svg-core';
 import Menu from "./components/Menu/Menu";
 import MenuItem from "./components/Menu/MenuItem";
 import SubMenu from "./components/Menu/SubMenu";
+import {fas} from '@fortawesome/free-solid-svg-icons'
+import Icon from './components/Icon/icon';
+library.add(fas)
+
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Icon icon="arrow-down" theme='primary' size="10x"/>
         <Menu defaultIndex={'0'} mode="vertical" defaultOpenSubMenus={['2']}>
           <MenuItem>
             cool link 1
