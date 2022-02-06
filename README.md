@@ -1,4 +1,4 @@
-# Pusu-Ui
+# Pusu-UI
 
 Pure Tiny React UI Library.
 
