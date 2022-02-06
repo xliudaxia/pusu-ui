@@ -1,31 +1,50 @@
-# PusU-Ui
+# Pusu-Ui
 
-Pure  React UI Library.
+Pure Tiny React UI Library.
 
-## 安装已经发布的组件库来试试
+## 安装
 
-~~~javascript
-请稍后……
+> 使用npm
+
+~~~sh
+npm install pusu-ui --save
 ~~~
 
-### 使用
+> 使用yarn
 
-开发中……
-开发完毕后，我们会第一时间发布到npmjs，并提供使用方式。
+~~~sh
+yarn add pusu-ui
+~~~
+
+## 使用
+
+```js
+// 加载样式
+import "pusu-ui/dist/index.css";
+
+// 引入组件
+import { Button } from 'pusu-ui'
+```
+
+### 技术栈
+- React & React Hooks
+- Typescript
+- ……
 
 ### 相关命令
 
-~~~bash
+```sh
 // 启动开发环境
 yarn start 
 
-// 构建
-npm run build
+
 
 // 单元测试
 yarn test
 
+// 构建
+yarn build
 
-~~~
+```
 
 欢迎参与项目贡献😁
