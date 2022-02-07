@@ -9,6 +9,7 @@
   "types": "dist/index.d.ts",
   "license": "MIT",
   "keywords": [
+    "Pusu-ui",
     "UI library",
     "tiny UI",
     "fantasy UI"
