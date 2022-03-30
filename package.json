@@ -1,9 +1,9 @@
 {
   "name": "pusu-ui",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "private": false,
   "description": "Pure Tiny React UI Library.",
-  "author": "jesse Liu",
+  "author": "Jesse Liu",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,8 @@
   "keywords": [
     "UI library",
     "tiny UI",
-    "fantasy UI"
+    "fantasy UI",
+    "PUSU UI"
   ],
   "homepage": "https://github.com/xliudaxia/Pusu-ui",
   "files": [
