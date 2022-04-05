@@ -1,4 +1,4 @@
-import React, { useState, FC } from "react";
+import React, { FC, useState } from "react";
 import classNames from "classnames";
 import Icon from "../Icon";
 
@@ -32,13 +32,13 @@ export const Alert: FC<AlertProps> = (props) => {
       onClose();
     }
   };
-  return (
+  return visible ? (
     <div className={classes}>
       {title ? <h4 className="alert-title">{title}</h4> : null}
       <p className="alert-message">{children}</p>
       {closeable ? <i onClick={handleClick}>{customCloseP}</i> : null}
     </div>
-  );
+  ) : null;
 };
 
 Alert.defaultProps = {
