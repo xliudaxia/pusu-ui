@@ -1,4 +1,10 @@
-# PUSU-UI
+---
+nav:
+  title: 首页
+  path: /
+---
+
+# Pusu-Ui
 
 Pure Tiny React UI Library.
 
@@ -7,13 +13,13 @@ Pure Tiny React UI Library.
 > 使用npm
 
 ~~~sh
-npm install PUSU-UI --save
+npm install pusu-ui --save
 ~~~
 
 > 使用yarn
 
 ~~~sh
-yarn add PUSU-UI
+yarn add pusu-ui
 ~~~
 
 ## 使用
@@ -36,6 +42,8 @@ import { Button } from 'pusu-ui'
 ```sh
 // 启动开发环境
 yarn start 
+
+
 
 // 单元测试
 yarn test
