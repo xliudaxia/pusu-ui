@@ -9,7 +9,6 @@
   "types": "dist/index.d.ts",
   "license": "MIT",
   "keywords": [
-    "Pusu-ui",
     "UI library",
     "tiny UI",
     "fantasy UI",
@@ -38,7 +37,7 @@
     "build": "npm run clean && npm run build-ts && npm run build-css",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "eslintConfig": {
     "extends": [

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { ChangeEvent, FC, useRef, useState } from "react";
-import Button from "../Button";
+import Dragger from "./dragger";
 import UploadList from "./uploadList";
 
 export type UploadFileStatus = "ready" | "uploading" | "success" | "error";
@@ -25,6 +25,13 @@ export interface UploadProps {
   onError?: (err: any, file: File) => void;
   onChange?: (file: File) => void;
   onRemove?: (file: UploadFileProps) => void;
+  headers?: { [key: string]: any };
+  name?: string;
+  data?: { [key: string]: any };
+  withCredentials?: boolean;
+  accept?: string;
+  multiple?: boolean;
+  drag?: boolean;
 }
 
 export const Upload: FC<UploadProps> = (props) => {
@@ -37,6 +44,14 @@ export const Upload: FC<UploadProps> = (props) => {
     onError,
     onChange,
     onRemove,
+    headers,
+    name,
+    data,
+    withCredentials,
+    accept,
+    multiple,
+    children,
+    drag,
   } = props;
   const fileRef = useRef<HTMLInputElement>(null);
   const [fileList, setFileList] = useState<UploadFileProps[]>(
@@ -96,14 +111,23 @@ export const Upload: FC<UploadProps> = (props) => {
       percent: 0,
       raw: file,
     };
-    setFileList([_file, ...fileList]);
+    setFileList((prevList) => {
+      return [_file, ...prevList];
+    });
     const formData = new FormData();
-    formData.append(file.name, file);
+    formData.append(name || file.name, file);
+    if (data) {
+      Object.keys(data).forEach((key) => {
+        formData.append(key, data[key]);
+      });
+    }
     axios
       .post(action, formData, {
         headers: {
-          "content-Type": "multipart/form-data",
+          ...headers,
+          "Content-Type": "multipart/form-data",
         },
+        withCredentials,
         onUploadProgress: (e) => {
           let percentage = Math.round((e.loaded * 100) / e.total) || 0;
           if (percentage < 100) {
@@ -145,16 +169,32 @@ export const Upload: FC<UploadProps> = (props) => {
   };
   return (
     <div className="pusu-upload-component">
-      <Button btnType="primary" onClick={handleClick}>
-        Upload file
-      </Button>
-      <input
-        ref={fileRef}
-        type="file"
-        className="pusu-file-input"
-        onChange={handleFilechange}
-        style={{ display: "none" }}
-      />
+      <div
+        className="pusu-upload-input"
+        style={{ display: "inline-block" }}
+        onClick={handleClick}
+      >
+        {drag ? (
+          <Dragger
+            onFile={(files) => {
+              uploadFiles(files);
+            }}
+          >
+            {children}
+          </Dragger>
+        ) : (
+          children
+        )}
+        <input
+          ref={fileRef}
+          type="file"
+          className="pusu-file-input"
+          onChange={handleFilechange}
+          style={{ display: "none" }}
+          accept={accept}
+          multiple={multiple}
+        />
+      </div>
       <UploadList fileList={fileList} onRemove={handleRemove} />
     </div>
   );
