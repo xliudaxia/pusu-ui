@@ -1,13 +1,13 @@
 /*
  * @Author: jessLiu
  * @Date: 2022-02-07 20:41:01
- * @LastEditTime: 2022-02-07 20:49:25
+ * @LastEditTime: 2022-04-05 14:48:18
  * @LastEditors: liuwenhao
  * @Description:Progress component
  * @FilePath: /vikingship/src/components/Progress/progress.tsx
  */
 import React, { FC } from "react";
-import { Themeprops } from "../Icon";
+import  {Themeprops}  from "../Icon/icon";
 export interface ProgressProps {
   percent: number;
   strokeHeight?: number;
@@ -15,8 +15,10 @@ export interface ProgressProps {
   styles?: React.CSSProperties;
   theme?: Themeprops;
 }
+
 const Progress: FC<ProgressProps> = (props) => {
   const { percent, strokeHeight, showText, styles, theme } = props;
+
   return (
     <div className="pusu-progress-bar" style={styles}>
       <div
@@ -36,6 +38,7 @@ const Progress: FC<ProgressProps> = (props) => {
 
 Progress.defaultProps = {
   strokeHeight: 15,
+  percent: 15,
   showText: true,
   theme: "primary",
 };
