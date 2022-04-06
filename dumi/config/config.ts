@@ -1,5 +1,7 @@
 export default {
-    chainWebpack(memo) {
-      memo.plugins.delete('copy');
-    },
-  };
+  base: "/PUSU-UI",
+  publicPath:"/PUSU-UI/",
+  chainWebpack(memo) {
+    memo.plugins.delete("copy");
+  },
+};

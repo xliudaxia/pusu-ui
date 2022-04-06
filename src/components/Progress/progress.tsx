@@ -1,11 +1,3 @@
-/*
- * @Author: jessLiu
- * @Date: 2022-02-07 20:41:01
- * @LastEditTime: 2022-04-05 14:48:18
- * @LastEditors: liuwenhao
- * @Description:Progress component
- * @FilePath: /vikingship/src/components/Progress/progress.tsx
- */
 import React, { FC } from "react";
 import  {Themeprops}  from "../Icon/icon";
 export interface ProgressProps {
