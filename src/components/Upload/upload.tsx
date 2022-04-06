@@ -1,5 +1,5 @@
 import axios from "axios";
-import { ChangeEvent, FC, useRef, useState } from "react";
+import React,{ ChangeEvent, FC, useRef, useState } from "react";
 import Dragger from "./dragger";
 import UploadList from "./uploadList";
 

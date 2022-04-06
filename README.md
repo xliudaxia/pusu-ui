@@ -12,6 +12,8 @@ Tiny React UI Library.
     - [Button](https://xliudaxia.github.io/PUSU-UI/button)
     - [Icon](https://xliudaxia.github.io/PUSU-UI/icon)
     - [Input](https://xliudaxia.github.io/PUSU-UI/input)
+    - [Progress](https://xliudaxia.github.io/PUSU-UI/progress)
+    - [Upload](https://xliudaxia.github.io/PUSU-UI/upload)
 
 ## Install 安装
 
