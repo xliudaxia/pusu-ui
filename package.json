@@ -9,15 +9,26 @@
   "types": "dist/index.d.ts",
   "license": "MIT",
   "keywords": [
+    "UI",
     "UI library",
+    "pusuui",
     "tiny UI",
     "fantasy UI",
-    "PUSU UI"
+    "PUSU UI",
+    "component",
+    "components",
+    "frontend",
+    "react",
+    "react-component"
   ],
   "homepage": "https://github.com/xliudaxia/Pusu-ui",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xliudaxia/pusu-ui"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",

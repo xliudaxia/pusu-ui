@@ -4,7 +4,7 @@ nav:
   path: /
 ---
 
-![pusu-logo](https://raw.githubusercontent.com/xliudaxia/imagebox/main/images/pusu-logo.png)
+![pusu-logo](https://s2.loli.net/2022/04/06/G1WCOe72DF8zcau.png)
 
 # PUSU-UI
 
@@ -12,17 +12,18 @@ Tiny React UI Library.
 
 简洁而又优雅的 React 组件库。
 
-# 链接 Links
+## 🔗 链接 Links
 
-- [Homepage](https://xliudaxia.github.io/pusu-ui/)
-  - [Alert](https://xliudaxia.github.io/pusu-ui/alert)
-  - [Button](https://xliudaxia.github.io/pusu-ui/button)
-  - [Icon](https://xliudaxia.github.io/pusu-ui/icon)
-  - [Input](https://xliudaxia.github.io/pusu-ui/input)
-  - [Progress](https://xliudaxia.github.io/pusu-ui/progress)
-  - [Upload](https://xliudaxia.github.io/pusu-ui/upload)
+[Homepage](https://github.com/xliudaxia/pusu-ui/)
 
-## Install 安装
+- [Alert](https://xliudaxia.github.io/pusu-ui/alert)
+- [Button](https://xliudaxia.github.io/pusu-ui/button)
+- [Icon](https://xliudaxia.github.io/pusu-ui/icon)
+- [Input](https://xliudaxia.github.io/pusu-ui/input)
+- [Progress](https://xliudaxia.github.io/pusu-ui/progress)
+- [Upload](https://xliudaxia.github.io/pusu-ui/upload)
+
+## 🔨 Install 安装
 
 > 使用 npm
 
@@ -36,7 +37,7 @@ npm install pusu-ui--save
 yarn add pusu-ui
 ```
 
-## Quick Start 使用
+## 📦 Quick Start 使用
 
 ```js
 // 引入组件
@@ -46,13 +47,13 @@ import { Button } from "pusu-ui";
 import "pusu-ui/dist/index.css";
 ```
 
-### Stacks 技术栈
+### ✨ Stacks 技术栈
 
 - React & React Hooks
 - Typescript
 - ……
 
-### 相关命令
+### ⌨️ 相关命令
 
 ```sh
 
