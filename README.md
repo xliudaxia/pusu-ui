@@ -1,32 +1,47 @@
-# Pusu-Ui
+![pusu-logo](https://raw.githubusercontent.com/xliudaxia/imagebox/main/images/pusu-logo.png)
 
-Pure Tiny React UI Library.
+# PUSU-UI
 
-## 安装
+Tiny React UI Library.
 
-> 使用npm
+简洁而又优雅的 React 组件库。
 
-~~~sh
-npm install pusu-ui --save
-~~~
+# 链接 Links
 
-> 使用yarn
+- [Homepage](https://xliudaxia.github.io/pusu-ui/)
+  - [Alert](https://xliudaxia.github.io/pusu-ui/alert)
+  - [Button](https://xliudaxia.github.io/pusu-ui/button)
+  - [Icon](https://xliudaxia.github.io/pusu-ui/icon)
+  - [Input](https://xliudaxia.github.io/pusu-ui/input)
+  - [Progress](https://xliudaxia.github.io/pusu-ui/progress)
+  - [Upload](https://xliudaxia.github.io/pusu-ui/upload)
 
-~~~sh
-yarn add pusu-ui
-~~~
+## Install 安装
 
-## 使用
+> 使用 npm
 
-```js
-// 加载样式
-import "pusu-ui/dist/index.css";
-
-// 引入组件
-import { Button } from 'pusu-ui'
+```sh
+npm install pusu-ui--save
 ```
 
-### 技术栈
+> 使用 yarn
+
+```sh
+yarn add pusu-ui
+```
+
+## Quick Start 使用
+
+```js
+// 引入组件
+import { Button } from "pusu-ui";
+
+// 加载样式
+import "pusu-ui/dist/index.css";
+```
+
+### Stacks 技术栈
+
 - React & React Hooks
 - Typescript
 - ……
@@ -34,10 +49,9 @@ import { Button } from 'pusu-ui'
 ### 相关命令
 
 ```sh
+
 // 启动开发环境
-yarn start 
-
-
+yarn start
 
 // 单元测试
 yarn test
@@ -47,4 +61,4 @@ yarn build
 
 ```
 
-欢迎参与项目贡献😁
+欢迎参与项目贡献 😁
