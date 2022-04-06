@@ -3,7 +3,9 @@
 # dependencies
 /node_modules
 /.pnp
+/dist
 .pnp.js
+.umi
 
 # testing
 /coverage
