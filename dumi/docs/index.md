@@ -1,3 +1,9 @@
+---
+nav:
+  title: 首页
+  path: /
+---
+
 # PUSU-UI
 
 Tiny React UI Library.
