@@ -5,6 +5,9 @@
 
 @import "mixin";
 
+// Animation
+@import "animation";
+
 // Button
 @import "../components/Button/style";
 
@@ -25,3 +28,6 @@
 
 // Alert
 @import "../components/Alert/style";
+
+// tabs
+@import "../components/Tabs/style";

@@ -8,7 +8,9 @@ type AnimationName =
   | "zoom-in-bottom"
   | "zoom-in-right";
 
-type TransitionProps = CSSTransitionProps & {
+type TransitionProps<
+  Ref extends HTMLElement | undefined = undefined
+> = CSSTransitionProps<Ref> & {
   animation?: AnimationName;
   wrapper?: boolean;
 };
@@ -16,7 +18,10 @@ type TransitionProps = CSSTransitionProps & {
 const Transition: FC<TransitionProps> = (props) => {
   const { children, classNames, animation, wrapper, ...restProps } = props;
   return (
-    <CSSTransition classNames={animation} {...restProps}>
+    <CSSTransition
+      classNames={animation ? classNames : animation}
+      {...restProps}
+    >
       {wrapper ? <div>{children}</div> : children}
     </CSSTransition>
   );
