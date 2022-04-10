@@ -1,27 +1,43 @@
 {
   "name": "pusu-ui",
-  "version": "0.1.2",
+  "version": "0.2.7",
   "private": false,
   "description": "Pure Tiny React UI Library.",
-  "author": "jesse Liu",
+  "author": "Jesse Liu",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
   "keywords": [
+    "UI",
     "UI library",
+    "pusuui",
     "tiny UI",
-    "fantasy UI"
+    "fantasy UI",
+    "PUSU UI",
+    "component",
+    "components",
+    "frontend",
+    "react",
+    "react-component"
   ],
   "homepage": "https://github.com/xliudaxia/Pusu-ui",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xliudaxia/pusu-ui"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.17",
-    "classnames": "^2.3.1"
+    "axios": "^0.26.1",
+    "classnames": "^2.3.1",
+    "gh-pages": "^3.2.3",
+    "pusu-ui": "^0.2.7",
+    "react-transition-group": "^4.4.1"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -33,9 +49,12 @@
     "build-ts": "tsc -p tsconfig.build.json",
     "build-css": "node-sass ./src/styles/index.scss ./dist/index.css",
     "build": "npm run clean && npm run build-ts && npm run build-css",
+    "dumi": "cross-env APP_ROOT=dumi dumi dev",
+    "docs:build": "cross-env APP_ROOT=dumi dumi build",
+    "docs:deploy": "gh-pages -d dumi/dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -63,12 +82,15 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/react-transition-group": "^4.4.1",
+    "cross-env": "^7.0.3",
+    "dumi": "^1.1.40",
     "node-sass": "^6.0.1",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "rimraf": "^3.0.2"
+    "react-scripts": "4.0.3",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
   }
 }
