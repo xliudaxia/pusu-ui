@@ -17,11 +17,13 @@ Tiny React UI Library.
 [Homepage](https://github.com/xliudaxia/pusu-ui/)
 
 - [Alert](https://xliudaxia.github.io/pusu-ui/alert)
+- [AutoComplete](https://xliudaxia.github.io/pusu-ui/autocomplete)
 - [Button](https://xliudaxia.github.io/pusu-ui/button)
 - [Icon](https://xliudaxia.github.io/pusu-ui/icon)
 - [Input](https://xliudaxia.github.io/pusu-ui/input)
 - [Menu](https://xliudaxia.github.io/pusu-ui/menu)
 - [Progress](https://xliudaxia.github.io/pusu-ui/progress)
+- [Tabs](https://xliudaxia.github.io/pusu-ui/tabs)
 - [Upload](https://xliudaxia.github.io/pusu-ui/upload)
 
 ## 🔨 Install 安装

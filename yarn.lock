@@ -10778,6 +10778,20 @@ pusu-ui@^0.2.11:
     pusu-ui "^0.2.10"
     react-transition-group "^4.3.0"
 
+pusu-ui@^0.2.12:
+  version "0.2.12"
+  resolved "https://registry.npmjs.org/pusu-ui/-/pusu-ui-0.2.12.tgz#923884d5c59c78fd79976a5db073f27c1bd9bf7c"
+  integrity sha512-jyxMKTC7WumWbwTn5yeUGCYZF9jv0xld2vPftyGV4x2MLrgSjM0XmFsPcdEbr0eSMxSLEzzB03ez/DfvenyTcA==
+  dependencies:
+    "@fortawesome/fontawesome-svg-core" "^1.2.36"
+    "@fortawesome/free-solid-svg-icons" "^5.15.4"
+    "@fortawesome/react-fontawesome" "^0.1.17"
+    axios "^0.26.1"
+    classnames "^2.3.1"
+    gh-pages "^3.2.3"
+    pusu-ui "^0.2.11"
+    react-transition-group "^4.3.0"
+
 pusu-ui@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/pusu-ui/-/pusu-ui-0.2.2.tgz#9b17f4f015fe6ecc47622f876eb0926937050aeb"
