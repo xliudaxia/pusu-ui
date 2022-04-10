@@ -1,6 +1,6 @@
 {
   "name": "pusu-ui",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "private": false,
   "description": "Pure Tiny React UI Library.",
   "author": "Jesse Liu",
