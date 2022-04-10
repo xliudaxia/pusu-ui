@@ -10761,6 +10761,20 @@ pusu-ui@^0.2.2:
     axios "^0.26.1"
     classnames "^2.3.1"
 
+pusu-ui@^0.2.7:
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/pusu-ui/-/pusu-ui-0.2.7.tgz#1cfe9f85e04cf2fa3f2b3632ddb0c844261e468d"
+  integrity sha512-Smi+RyGupai284PRg0LH3vzSuXsrUTUK+FT6Vjm172mxjpSN6vC8Fz/F7IuDLx/Sr5VsSAukB+Y9hfUErjjjnA==
+  dependencies:
+    "@fortawesome/fontawesome-svg-core" "^1.2.36"
+    "@fortawesome/free-solid-svg-icons" "^5.15.4"
+    "@fortawesome/react-fontawesome" "^0.1.17"
+    axios "^0.26.1"
+    classnames "^2.3.1"
+    gh-pages "^3.2.3"
+    pusu-ui "^0.2.2"
+    react-transition-group "^4.4.1"
+
 q@^1.1.2:
   version "1.5.1"
   resolved "https://r2.cnpmjs.org/q/-/q-1.5.1.tgz"

@@ -36,7 +36,7 @@
     "axios": "^0.26.1",
     "classnames": "^2.3.1",
     "gh-pages": "^3.2.3",
-    "pusu-ui": "^0.2.2",
+    "pusu-ui": "^0.2.7",
     "react-transition-group": "^4.4.1"
   },
   "peerDependencies": {
