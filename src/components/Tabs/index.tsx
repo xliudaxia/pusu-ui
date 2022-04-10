@@ -1,10 +1,10 @@
-import Tabs from "./tabs";
+import Tabs, { TabProps } from "./tabs";
 import TabsItem from "./tabsItem";
 
-type TabsComponentProps = {
+type TabsComponentProps = React.FC<TabProps> & {
   Item?: typeof TabsItem;
 };
 
-const TransTabs = Tabs as TabsComponentProps;
+let TransTabs = Tabs as TabsComponentProps;
 TransTabs.Item = TabsItem;
 export default TransTabs;
