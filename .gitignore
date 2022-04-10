@@ -6,6 +6,7 @@
 /dist
 .pnp.js
 .umi
+/dumi
 
 # testing
 /coverage
