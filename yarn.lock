@@ -10750,6 +10750,20 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://r2.cnpmjs.org/punycode/-/punycode-2.1.1.tgz"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
+pusu-ui@^0.2.10:
+  version "0.2.10"
+  resolved "https://registry.npmjs.org/pusu-ui/-/pusu-ui-0.2.10.tgz#aff2c9e65ec7ff9e819c1192f857432943d477ca"
+  integrity sha512-IS9pUnZ8ZiOeKMEz3FGBz2DargmAkyNjrm8fCpkHUY4AGV4vO0bBEljFQYfVOEKqFWzRmXF2cnMxje2iz3LGLw==
+  dependencies:
+    "@fortawesome/fontawesome-svg-core" "^1.2.36"
+    "@fortawesome/free-solid-svg-icons" "^5.15.4"
+    "@fortawesome/react-fontawesome" "^0.1.17"
+    axios "^0.26.1"
+    classnames "^2.3.1"
+    gh-pages "^3.2.3"
+    pusu-ui "^0.2.9"
+    react-transition-group "^4.3.0"
+
 pusu-ui@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/pusu-ui/-/pusu-ui-0.2.2.tgz#9b17f4f015fe6ecc47622f876eb0926937050aeb"
