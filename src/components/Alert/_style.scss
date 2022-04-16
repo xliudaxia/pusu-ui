@@ -1,11 +1,12 @@
 .alert {
   display: block;
   width: $alert-width;
-  @include alert-color($primary, $white);
+  // @include alert-color(rgba($primary, 0.8), $white);
   border-radius: $alert-border-radius;
   border-width: $border-width;
   border-style: solid;
   padding: $btn-padding-y $btn-padding-x;
+  @include alert-style(lighten(#1890ff, 35%), #1890ff, $black);
   position: relative;
   h4.alert-title {
     margin-bottom: 0;
@@ -30,11 +31,11 @@
 }
 
 .alert-success {
-  @include alert-color($success, $white);
+  @include alert-style(lighten($success, 15%), lighten(gray, 20%), $white);
 }
 .alert-danger {
-  @include alert-color($danger, $white);
+  @include alert-style(lighten($danger, 15%), lighten(gray, 20%), $white);
 }
 .alert-warning {
-  @include alert-color($warning, $white);
+  @include alert-style(lighten($warning, 15%), lighten(gray, 20%), $white);
 }

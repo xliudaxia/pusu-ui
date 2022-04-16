@@ -8,17 +8,18 @@ Tiny React UI Library.
 
 ## 🔗 链接 Links
 
-[Homepage](https://github.com/xliudaxia/pusu-ui/)
+- [Documentation](https://xliudaxia.github.io/pusu-ui/alert)
+  - [Alert](https://xliudaxia.github.io/pusu-ui/alert)
+  - [AutoComplete](https://xliudaxia.github.io/pusu-ui/autocomplete)
+  - [Button](https://xliudaxia.github.io/pusu-ui/button)
+  - [Icon](https://xliudaxia.github.io/pusu-ui/icon)
+  - [Input](https://xliudaxia.github.io/pusu-ui/input)
+  - [Menu](https://xliudaxia.github.io/pusu-ui/menu)
+  - [Progress](https://xliudaxia.github.io/pusu-ui/progress)
+  - [Tabs](https://xliudaxia.github.io/pusu-ui/tabs)
+  - [Upload](https://xliudaxia.github.io/pusu-ui/upload)
 
-- [Alert](https://xliudaxia.github.io/pusu-ui/alert)
-- [AutoComplete](https://xliudaxia.github.io/pusu-ui/autocomplete)
-- [Button](https://xliudaxia.github.io/pusu-ui/button)
-- [Icon](https://xliudaxia.github.io/pusu-ui/icon)
-- [Input](https://xliudaxia.github.io/pusu-ui/input)
-- [Menu](https://xliudaxia.github.io/pusu-ui/menu)
-- [Progress](https://xliudaxia.github.io/pusu-ui/progress)
-- [Tabs](https://xliudaxia.github.io/pusu-ui/tabs)
-- [Upload](https://xliudaxia.github.io/pusu-ui/upload)
+[GitHub Repo](https://github.com/xliudaxia/pusu-ui/)
 
 ## 🔨 Install 安装
 
