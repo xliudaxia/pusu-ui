@@ -87,38 +87,24 @@ const GridBox = (props) => <div style={{ margin: 20 }}>{props.children}</div>;
 export default () => (
   <>
     <GridBox>
-      <Alert type="default" closable message="Default 类型的 Alert">
+      <Alert type="default" closeable message="Default 类型的 Alert">
         我是用于演示的内容区域
       </Alert>
     </GridBox>
     <GridBox>
-      <Alert type="success" closable message="Success 类型的 Alert">
+      <Alert type="success" closeable message="Success 类型的 Alert">
         我是用于演示的内容区域
       </Alert>
     </GridBox>
     <GridBox>
-      <Alert type="danger" closable message="Danger 类型的 Alert">
+      <Alert type="danger" closeable message="Danger 类型的 Alert">
         我是用于演示的内容区域
       </Alert>
     </GridBox>
     <GridBox>
-      <Alert type="warning" closable message="Warning 类型的 Alert">
+      <Alert type="warning" closeable message="Warning 类型的 Alert">
         我是用于演示的内容区域
       </Alert>
-    </GridBox>
-    <GridBox>
-      <Alert
-        type="primary"
-        closable
-        message="自定义 Description 的 Alert"
-        children={
-          <>
-            <div>第一个段落</div>
-            <div>第二个段落</div>
-          </>
-        }
-        onClose={() => {}}
-      />
     </GridBox>
   </>
 );
