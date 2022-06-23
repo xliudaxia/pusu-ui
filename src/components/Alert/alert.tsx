@@ -65,7 +65,7 @@ export const Alert: FC<AlertProps> = (props) => {
 };
 
 Alert.defaultProps = {
-  closeable: true,
+  closeable: false,
   type: "primary",
 };
 
