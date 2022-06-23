@@ -4,6 +4,7 @@ import React from "react";
 export type ButtonSize = "lg" | "sm";
 export type ButtonType = "primary" | "default"|"danger"|"link";
 
+const prefixCls = "pusu-btn";
 
 interface BaseButtonProps {
   className?: string;
@@ -22,9 +23,9 @@ export type ButtonProps = Partial<AnchorButtonProps & NativeButtonProps>;
 
 const Button: React.FC<ButtonProps> = (props) => {
   const { className, disabled, size, btnType, children, href, ...rest } = props;
-  const classes = classNames(`btn`, className, {
-    [`btn-${btnType}`]: btnType,
-    [`btn-${size}`]: size,
+  const classes = classNames(prefixCls, className, {
+    [`${prefixCls}-${btnType}`]: btnType,
+    [`${prefixCls}-${size}`]: size,
     disabled: btnType === "link" && disabled,
   });
   if (btnType === "link" && href) {
@@ -45,6 +46,7 @@ const Button: React.FC<ButtonProps> = (props) => {
 Button.defaultProps = {
   disabled: false,
   btnType: "default",
+  href:"https://www.baidu.com"
 };
 
 export default Button;

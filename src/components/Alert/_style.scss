@@ -1,23 +1,22 @@
 .alert {
   display: block;
   width: $alert-width;
-  // @include alert-color(rgba($primary, 0.8), $white);
+  @include alert-color(rgba($primary, 0.8), $white);
   border-radius: $alert-border-radius;
-  border-width: $border-width;
+  border-width: $alert-border-width;
   border-style: solid;
   padding: $btn-padding-y $btn-padding-x;
-  @include alert-style(lighten(#1890ff, 35%), #1890ff, $black);
   position: relative;
-  h4.alert-title {
-    margin-bottom: 0;
-    line-height: $alert-line-height;
-    font-size: $alert-title-font-size;
-  }
-  p.alert-message {
-    margin-top: 0;
+  span.alert-message {
     margin-bottom: 0;
     line-height: $alert-line-height;
     font-size: $alert-message-font-size;
+  }
+  p.alert-description {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: $alert-line-height;
+    font-size: $alert-description-font-size;
   }
   > i:last-child {
     position: absolute;
@@ -30,12 +29,16 @@
   }
 }
 
+.alert-default {
+  @include alert-style($orange, $orange, $black);
+}
+
 .alert-success {
-  @include alert-style(lighten($success, 15%), lighten(gray, 20%), $white);
+  @include alert-style($success, $success, $black);
 }
 .alert-danger {
-  @include alert-style(lighten($danger, 15%), lighten(gray, 20%), $white);
+  @include alert-style($danger, $danger, $black);
 }
 .alert-warning {
-  @include alert-style(lighten($warning, 15%), lighten(gray, 20%), $white);
+  @include alert-style($warning, $warning, $black);
 }

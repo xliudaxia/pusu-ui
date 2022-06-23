@@ -12,24 +12,24 @@ const GridBox = (props) => <div style={{ margin: 20 }}>{props.children}</div>;
 export default () => (
   <>
     <GridBox>
-      <Button btnType="primary">Primary button</Button>
+      <Button btnType="primary">Primary</Button>
     </GridBox>
     <GridBox>
-      <Button btnType="default">Default Button</Button>
+      <Button btnType="default">Default</Button>
     </GridBox>
     <GridBox>
-      <Button btnType="danger">Danger button</Button>
+      <Button btnType="danger">Danger</Button>
     </GridBox>
     <GridBox>
       <Button btnType="link" href="https://www.google.com">
-        Link button
+        Link
       </Button>
     </GridBox>
   </>
 );
 ```
 
-### 不同尺寸的 Button
+### 不同大小的 Button
 
 ```tsx
 import React from "react";
@@ -41,13 +41,48 @@ const GridBox = (props) => <div style={{ margin: 20 }}>{props.children}</div>;
 export default () => (
   <>
     <GridBox>
-      <Button size="lg">大按钮</Button>
+      <Button size="lg">Big Button</Button>
     </GridBox>
     <GridBox>
-      <Button>默认大小</Button>
+      <Button>Default Button</Button>
     </GridBox>
     <GridBox>
-      <Button size="sm">小按钮</Button>
+      <Button size="sm">Small Button</Button>
+    </GridBox>
+  </>
+);
+```
+
+### 禁用的 Button
+
+```tsx
+import React from "react";
+import { Button } from "pusu-ui";
+import "pusu-ui/dist/index.css";
+
+const GridBox = (props) => <div style={{ margin: 20 }}>{props.children}</div>;
+
+export default () => (
+  <>
+    <GridBox>
+      <Button disabled btnType="primary">
+        Primary
+      </Button>
+    </GridBox>
+    <GridBox>
+      <Button disabled btnType="default">
+        Default
+      </Button>
+    </GridBox>
+    <GridBox>
+      <Button disabled btnType="danger">
+        Danger
+      </Button>
+    </GridBox>
+    <GridBox>
+      <Button disabled btnType="link" href="https://www.google.com">
+        Link
+      </Button>
     </GridBox>
   </>
 );
