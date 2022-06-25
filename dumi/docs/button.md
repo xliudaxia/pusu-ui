@@ -10,15 +10,15 @@ import "pusu-ui/dist/index.css";
 const GridBox = (props) => (
   <span style={{ padding: 10 }}>{props.children}</span>
 );
+const LayoutCSS = { marginBottom: 20, marginRight: 20 };
 
 const GhostGrid = (props) => (
   <span
     style={{
       background: "gray",
       borderRadius: 5,
-      paddingLeft: 15,
-      marginLeft:10,
-      paddingRight: 15,
+      paddingLeft: 7,
+      paddingRight: 7,
       paddingTop: 13,
       paddingBottom: 17,
     }}
@@ -29,20 +29,19 @@ const GhostGrid = (props) => (
 
 export default () => (
   <>
-    <GridBox>
-      <Button btnType="default">Default</Button>
-    </GridBox>
-    <GridBox>
-      <Button btnType="primary">Primary</Button>
-    </GridBox>
-    <GridBox>
-      <Button btnType="danger">Danger</Button>
-    </GridBox>
-    <GridBox>
-      <Button btnType="link" href="https://www.baidu.com">
-        Link
-      </Button>
-    </GridBox>
+    <Button style={LayoutCSS} btnType="default">
+      Default
+    </Button>
+    <Button style={LayoutCSS} btnType="primary">
+      Primary
+    </Button>
+    <Button style={LayoutCSS} btnType="danger">
+      Danger
+    </Button>
+    <Button style={LayoutCSS} btnType="link" href="https://www.baidu.com">
+      Link
+    </Button>
+    <br/>
     <GhostGrid>
       <Button btnType="ghost">Ghost</Button>
     </GhostGrid>
@@ -59,44 +58,39 @@ import React from "react";
 import { Button } from "pusu-ui";
 import "pusu-ui/dist/index.css";
 
-const GridBox = (props) => (
-  <span style={{ ...{ padding: 10 }, ...props.style }}>{props.children}</span>
-);
+const LayoutCSS = { marginBottom: 20, marginRight: 20 };
 
 export default () => (
   <>
-    <GridBox>
-      <Button size="lg">Big Button</Button>
-    </GridBox>
-    <GridBox>
-      <Button>Default Button</Button>
-    </GridBox>
-    <GridBox>
-      <Button size="sm">Small Button</Button>
-    </GridBox>
+    <Button style={LayoutCSS} size="lg">
+      Big Button
+    </Button>
+    <Button style={LayoutCSS}>Default Button</Button>
+    <Button size="sm" style={LayoutCSS}>
+      Small Button
+    </Button>
   </>
 );
 ```
 
 ### 带图标的 Button
+
 参见：[支持图标列表](https://fontawesome.com/search?p=7&m=free&s=solid)
+
 ```tsx
 import React from "react";
 import { Button } from "pusu-ui";
 import "pusu-ui/dist/index.css";
 
-const GridBox = (props) => (
-  <span style={{ padding: 10 }}>{props.children}</span>
-);
+const LayoutCSS = { marginBottom: 20, marginRight: 20 };
 
 const GhostGrid = (props) => (
   <span
     style={{
       background: "gray",
       borderRadius: 5,
-      paddingLeft: 15,
-      marginLeft:10,
-      paddingRight: 15,
+      paddingLeft: 7,
+      paddingRight: 7,
       paddingTop: 13,
       paddingBottom: 17,
     }}
@@ -107,23 +101,17 @@ const GhostGrid = (props) => (
 
 export default () => (
   <>
-    <GridBox>
-      <Button icon="frog" btnType="primary">
-        Primary
-      </Button>
-    </GridBox>
-    <GridBox>
-      <Button icon="bookmark" btnType="default">
-        Default
-      </Button>
-    </GridBox>
-    <GridBox>
-      <Button icon="fire" btnType="danger">
-        Danger
-      </Button>
-    </GridBox>
-    <GhostGrid
-    >
+    <Button style={LayoutCSS} icon="frog" btnType="primary">
+      Primary
+    </Button>
+    <Button style={LayoutCSS} icon="bookmark" btnType="default">
+      Default
+    </Button>
+    <Button style={LayoutCSS} icon="fire" btnType="danger">
+      Danger
+    </Button>
+    <br/>
+    <GhostGrid>
       <Button icon="ghost" btnType="ghost">
         Ghost
       </Button>
@@ -143,52 +131,56 @@ const GridBox = (props) => (
   <span style={{ ...{ padding: 10 }, ...props.style }}>{props.children}</span>
 );
 
+const LayoutCSS = { marginBottom: 20, marginRight: 20 };
+
+const GhostGrid = (props) => (
+  <span
+    style={{
+      background: "gray",
+      borderRadius: 5,
+      paddingLeft: 7,
+      paddingRight: 7,
+      paddingTop: 13,
+      paddingBottom: 17,
+    }}
+  >
+    {props.children}
+  </span>
+);
+
 export default () => {
   const [loading, setLoading] = useState(false);
   return (
     <>
-      <GridBox>
-        <Button loading btnType="primary">
-          Primary
-        </Button>
-      </GridBox>
-      <GridBox>
-        <Button loading btnType="default">
-          Default
-        </Button>
-      </GridBox>
-      <GridBox>
-        <Button loading btnType="danger">
-          Danger
-        </Button>
-      </GridBox>
-      <GridBox
-        style={{
-          background: "gray",
-          borderRadius: 5,
-          paddingTop: 12,
-          paddingBottom: 16,
+      <Button style={LayoutCSS} loading btnType="primary">
+        Primary
+      </Button>
+      <Button style={LayoutCSS} loading btnType="default">
+        Default
+      </Button>
+      <Button style={LayoutCSS} loading btnType="danger">
+        Danger
+      </Button>
+      <Button
+        style={LayoutCSS}
+        icon="splotch"
+        onClick={() => {
+          setLoading(true);
+          setTimeout(() => {
+            setLoading(false);
+          }, 2000);
         }}
+        loading={loading}
+        btnType="primary"
       >
+        点击试试
+      </Button>
+      <br/>
+      <GhostGrid>
         <Button loading btnType="ghost">
           Ghost
         </Button>
-      </GridBox>
-      <GridBox style={{ display: "block", marginTop: 10 }}>
-        <Button
-          icon="splotch"
-          onClick={() => {
-            setLoading(true);
-            setTimeout(() => {
-              setLoading(false);
-            }, 2000);
-          }}
-          loading={loading}
-          btnType="primary"
-        >
-          点击试试
-        </Button>
-      </GridBox>
+      </GhostGrid>
     </>
   );
 };
@@ -201,17 +193,15 @@ import React from "react";
 import { Button } from "pusu-ui";
 import "pusu-ui/dist/index.css";
 
-const GridBox = (props) => (
-  <span style={{ ...{ padding: 10 }, ...props.style }}>{props.children}</span>
-);
+const LayoutCSS = { marginBottom: 20, marginRight: 20 };
 
 const GhostGrid = (props) => (
   <span
     style={{
       background: "gray",
       borderRadius: 5,
-      paddingLeft: 15,
-      paddingRight: 15,
+      paddingLeft: 7,
+      paddingRight: 7,
       paddingTop: 13,
       paddingBottom: 17,
     }}
@@ -222,24 +212,24 @@ const GhostGrid = (props) => (
 
 export default () => (
   <>
-    <GridBox>
-      <Button disabled btnType="primary">
-        Primary
-      </Button>
-    </GridBox>
-    <GridBox>
-      <Button disabled btnType="default">
-        Default
-      </Button>
-    </GridBox>
-    <GridBox>
-      <Button btnType="danger">Danger</Button>
-    </GridBox>
-    <GridBox>
-      <Button disabled btnType="link" href="https://www.google.com">
-        Link
-      </Button>
-    </GridBox>
+    <Button style={LayoutCSS} disabled btnType="primary">
+      Primary
+    </Button>
+    <Button style={LayoutCSS} disabled btnType="default">
+      Default
+    </Button>
+    <Button style={LayoutCSS} disabled btnType="danger">
+      Danger
+    </Button>
+    <Button
+      style={LayoutCSS}
+      disabled
+      btnType="link"
+      href="https://www.google.com"
+    >
+      Link
+    </Button>
+    <br/>
     <GhostGrid>
       <Button disabled btnType="ghost">
         Ghost
