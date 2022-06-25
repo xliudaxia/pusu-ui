@@ -29,6 +29,7 @@ $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-800 !default;
+$transparent: transparent !default;
 
 $theme-colors: (
   "primary": $primary,
@@ -39,6 +40,7 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
+  "ghost": $transparent,
 );
 
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -47,6 +49,9 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   "Liberation Mono", "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !default;
+
+// 字体颜色
+$font-color: $gray-700 !default;
 
 // 字体大小
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`

@@ -3,3 +3,7 @@
     color: $val;
   }
 }
+
+.pusu-icon-loading {
+  animation: pusu-rotate 1.5s linear infinite;
+}

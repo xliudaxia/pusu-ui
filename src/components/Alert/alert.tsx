@@ -2,7 +2,7 @@ import React, { FC, useState } from "react";
 import classNames from "classnames";
 import Icon from "../Icon";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { Themeprops } from "../Icon/icon";
+import { ThemeProps } from "../Icon/icon";
 
 export type AlertType =
   | "success"
@@ -17,7 +17,7 @@ export interface AlertProps {
   closeable?: boolean;
   customClose?: string;
   icon?: IconProp;
-  iconTheme?: Themeprops;
+  iconTheme?: ThemeProps;
   onClose?: () => void;
   type: AlertType;
 }

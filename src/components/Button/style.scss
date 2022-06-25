@@ -40,6 +40,12 @@
     @include button-style($white, $gray-400, $body-color, $white, $primary, $primary)  
 }
 
+.pusu-btn-ghost{
+    user-select: none;
+    box-shadow: none;
+    @include button-style($transparent, $white, $white, $transparent, $primary, $primary)
+}
+
 
 .pusu-btn-link{
     font-weight: $font-weight-normal;

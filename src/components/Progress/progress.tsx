@@ -1,11 +1,11 @@
 import React, { FC } from "react";
-import  {Themeprops}  from "../Icon/icon";
+import { ThemeProps } from "../Icon/icon";
 export interface ProgressProps {
   percent: number;
   strokeHeight?: number;
   showText?: boolean;
   styles?: React.CSSProperties;
-  theme?: Themeprops;
+  theme?: ThemeProps;
 }
 
 const Progress: FC<ProgressProps> = (props) => {

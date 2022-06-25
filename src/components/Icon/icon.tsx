@@ -4,20 +4,22 @@ import classNames from "classnames";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {fas} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon, FontAwesomeIconProps} from '@fortawesome/react-fontawesome'
-export type Themeprops = 'primary'|'secondary'|'success'|'info'|'warning'|"danger";
+export type ThemeProps = 'primary'|'secondary'|'success'|'info'|'warning'|"danger";
 
 library.add(fas);
 export interface IconProps extends FontAwesomeIconProps{
-    theme?:Themeprops
+    theme?:ThemeProps
 }
 
 const Icon:React.FC<IconProps> = (props)=>{
-    const {className,theme,...restProps} = props
-    const classes = classNames('pusu-icon',className,{
-        [`icon-${theme}`]:theme
+    const prefixCls = "pusu-icon";
+    const {className,theme,icon,...restProps} = props
+    const classes = classNames(prefixCls,className,{
+        [`icon-${theme}`]:theme,
+        [`${prefixCls}-loading`]: icon === "spinner",
     })
     return (
-        <FontAwesomeIcon className={classes} {...restProps}/>
+        <FontAwesomeIcon icon={icon} className={classes} {...restProps}/>
     )
 }
 

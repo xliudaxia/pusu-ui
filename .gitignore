@@ -13,6 +13,7 @@
 # production
 /build
 /dist
+/dumi/dist
 
 # misc
 .DS_Store
