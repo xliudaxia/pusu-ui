@@ -28,8 +28,8 @@ export default () => (
     <br />
     <LineBox>
       <Button btnType="primary" disabled={false} size="lg">
-        <Icon icon="check" />
-        默认选中
+        <Icon icon="check"  />
+        <span style={{marginLeft:10}}>  默认选中</span>
       </Button>
     </LineBox>
   </>

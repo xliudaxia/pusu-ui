@@ -51,7 +51,7 @@ export default () => (
       <TabsItem
         label={
           <>
-            <Icon icon="exclamation-circle" />
+            <Icon style={{ marginRight: 5 }} icon="exclamation-circle" />
             Card Tab 1
           </>
         }

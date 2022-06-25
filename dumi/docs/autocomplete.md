@@ -1,7 +1,7 @@
 ## AutoComplete 自动完成
 
 ### 基础使用
-
+#### 输入一个英文名称试试，如 <code>tom</code>
 ```tsx
 import React from "react";
 import { AutoComplete } from "pusu-ui";
