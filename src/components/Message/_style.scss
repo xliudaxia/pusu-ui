@@ -1,0 +1,46 @@
+.pusu-message {
+  position: fixed;
+  top: 8px;
+  left: 50vw;
+  transform: translateX(-50%);
+  box-shadow: 0 3px 6px -4px rgbrgba(0, 0, 0, 0.12),
+  0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+
+  &-wrapper {
+    z-index: 999;
+    overflow: hidden;
+    border-radius: $border-radius;
+    padding: 10px 16px;
+    border-radius: 2em;
+    box-shadow: $box-shadow-sm;
+    border: $border-width solid $border-color;
+
+    background-color: $white;
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    > span {
+      font-size: $font-size-sm;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &-text {
+    padding-left: 10px;
+  }
+
+  &-open {
+    pointer-events: auto;
+    animation: pusu-fade-in 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+
+  &-close {
+    pointer-events: none;
+    animation: pusu-fade-out 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+}
