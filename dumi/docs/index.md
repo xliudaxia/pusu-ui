@@ -25,6 +25,7 @@ Tiny React UI Library.
 - [Progress](https://xliudaxia.github.io/pusu-ui/progress)
 - [Tabs](https://xliudaxia.github.io/pusu-ui/tabs)
 - [Upload](https://xliudaxia.github.io/pusu-ui/upload)
+- [Message](https://xliudaxia.github.io/pusu-ui/message)
 
 ## 🔨 Install 安装
 
