@@ -4,7 +4,6 @@ import classNames from "classnames";
 import Icon from "../Icon";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { ThemeProps } from "../Icon/icon";
-import { MessageContainer } from "./container";
 
 export type MeesageType = "success" | "info" | "warning" | "loading" | "error";
 
@@ -97,7 +96,7 @@ const getContainerNode: () => HTMLElement = () => {
       return $root;
     }
     const $f = document.createDocumentFragment();
-    ReactDOM.render(<MessageContainer />, $f);
+    ReactDOM.render(<div className="container" id="pusu-message-container"></div>, $f);
     document.body.appendChild($f);
     containerNode = document.getElementById("pusu-message-container");
     return containerNode;
