@@ -1,4 +1,4 @@
-![pusu-logo](https://s2.loli.net/2022/04/06/G1WCOe72DF8zcau.png)
+![pusu-logo](https://www.qingtengzhi.com/wp-content/uploads/2022/06/pusu-logo.png)
 
 # PUSU-UI
 
@@ -8,16 +8,17 @@ Tiny React UI Library.
 
 ## 🔗 链接 Links
 
-- [Documentation](https://xliudaxia.github.io/pusu-ui/alert)
-  - [Alert](https://xliudaxia.github.io/pusu-ui/alert)
-  - [AutoComplete](https://xliudaxia.github.io/pusu-ui/autocomplete)
-  - [Button](https://xliudaxia.github.io/pusu-ui/button)
-  - [Icon](https://xliudaxia.github.io/pusu-ui/icon)
-  - [Input](https://xliudaxia.github.io/pusu-ui/input)
-  - [Menu](https://xliudaxia.github.io/pusu-ui/menu)
-  - [Progress](https://xliudaxia.github.io/pusu-ui/progress)
-  - [Tabs](https://xliudaxia.github.io/pusu-ui/tabs)
-  - [Upload](https://xliudaxia.github.io/pusu-ui/upload)
+[主页](https://pusu.js.org)
+- [Alert](https://pusu.js.org/pusu-ui/alert)
+- [AutoComplete](https://pusu.js.org/pusu-ui/autocomplete)
+- [Button](https://pusu.js.org/pusu-ui/button)
+- [Icon](https://pusu.js.org/pusu-ui/icon)
+- [Input](https://pusu.js.org/pusu-ui/input)
+- [Menu](https://pusu.js.org/pusu-ui/menu)
+- [Message](https://pusu.js.org/pusu-ui/message)
+- [Progress](https://pusu.js.org/pusu-ui/progress)
+- [Tabs](https://pusu.js.org/pusu-ui/tabs)
+- [Upload](https://pusu.js.org/pusu-ui/upload)
 
 [GitHub Repo](https://github.com/xliudaxia/pusu-ui/)
 

@@ -1,21 +1,19 @@
 .pusu-message {
-  position: fixed;
-  top: 8px;
-  left: 50vw;
-  transform: translateX(-50%);
-  box-shadow: 0 3px 6px -4px rgbrgba(0, 0, 0, 0.12),
-  0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  display: block;
+  margin: 12px auto;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 80vw;
 
   &-wrapper {
-    z-index: 999;
-    overflow: hidden;
-    border-radius: $border-radius;
-    padding: 10px 16px;
     border-radius: 2em;
-    box-shadow: $box-shadow-sm;
-    border: $border-width solid $border-color;
-
-    background-color: $white;
+    padding: 10px 16px;
+    box-shadow: 0 3px 6px -4px rgba(0, 0 ,0 , 0.12), 0 6px 16px 0 rgba(0, 0 ,0 , 0.08),
+    0 9px 28px 8px rgba(0, 0 ,0 , 0.05);
+    background-color: #fff;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
   }
 
   &-content {
@@ -36,11 +34,22 @@
 
   &-open {
     pointer-events: auto;
-    animation: pusu-fade-in 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation: pusu-fade-in 0.3s both;
   }
 
   &-close {
     pointer-events: none;
-    animation: pusu-fade-out 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation: pusu-fade-out 0.3s both;
   }
+}
+
+.container {
+  position: fixed;
+  right: 0;
+  top: 8px;
+  height: 500px;
+  left: 0;
+  z-index: 999;
+  user-select: none;
+  pointer-events: none;
 }
