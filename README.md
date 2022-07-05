@@ -1,22 +1,41 @@
-![pusu-logo](https://s2.loli.net/2022/04/06/G1WCOe72DF8zcau.png)
+<div align="center">
+  <a href="https://arco.design" target="_blank">
+    <img alt="Arco Design Logo" width="200" src="https://www.qingtengzhi.com/wp-content/uploads/2022/06/pusu-logo.png"/>
+  </a>
+</div>
 
-# PUSU-UI
 
-Tiny React UI Library.
+<div align="center">
+  <h1>PUSU-UI</h1>
+</div>
+
+<div align="center"> 
+
+
+[![license](https://img.shields.io/badge/license-MIT-brightgreen)](https://github.com/arco-design/arco-design/blob/main/LICENSE)
+
+Tiny & Beautiful React UI Library.
 
 简洁而又优雅的 React 组件库。
+</div>
 
-## 🔗 链接 Links
 
-[Homepage](https://github.com/xliudaxia/pusu-ui/)
 
-- [Alert](https://xliudaxia.github.io/pusu-ui/alert)
-- [Button](https://xliudaxia.github.io/pusu-ui/button)
-- [Icon](https://xliudaxia.github.io/pusu-ui/icon)
-- [Input](https://xliudaxia.github.io/pusu-ui/input)
-- [Menu](https://xliudaxia.github.io/pusu-ui/menu)
-- [Progress](https://xliudaxia.github.io/pusu-ui/progress)
-- [Upload](https://xliudaxia.github.io/pusu-ui/upload)
+## 🥳 Homepage 主页
+https://pusu.js.org
+
+## 🔗 Components 组件
+
+- [Alert](https://pusu.js.org/alert)
+- [AutoComplete](https://pusu.js.org/autocomplete)
+- [Button](https://pusu.js.org/button)
+- [Icon](https://pusu.js.org/icon)
+- [Input](https://pusu.js.org/input)
+- [Menu](https://pusu.js.org/menu)
+- [Message](https://pusu.js.org/message)
+- [Progress](https://pusu.js.org/progress)
+- [Tabs](https://pusu.js.org/tabs)
+- [Upload](https://pusu.js.org/upload)
 
 ## 🔨 Install 安装
 
@@ -46,9 +65,11 @@ import "pusu-ui/dist/index.css";
 
 - React & React Hooks
 - Typescript
+- Scss
+- Font Awesome
 - ……
 
-### ⌨️ 相关命令
+### ⌨️ Commands 相关命令
 
 ```sh
 
@@ -64,3 +85,5 @@ yarn build
 ```
 
 欢迎参与项目贡献 😁
+
+Welcome Contribute !
