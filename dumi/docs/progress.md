@@ -37,7 +37,7 @@ import "pusu-ui/dist/index.css";
 
 export default () => (
   <>
-    <Progress percent={50} theme="success" strokeHeight={50} />
+    <Progress percent={50} theme="success" strokeHeight={30} />
   </>
 );
 ```

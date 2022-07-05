@@ -16,16 +16,16 @@ Tiny React UI Library.
 ## 🔗 链接 Links
 
 ### [主页](https://pusu.js.org/)
-- [Alert](https://pusu.js.org/pusu-ui/alert)
-- [AutoComplete](https://pusu.js.org/pusu-ui/autocomplete)
-- [Button](https://pusu.js.org/pusu-ui/button)
-- [Icon](https://pusu.js.org/pusu-ui/icon)
-- [Input](https://pusu.js.org/pusu-ui/input)
-- [Menu](https://pusu.js.org/pusu-ui/menu)
-- [Message](https://pusu.js.org/pusu-ui/message)
-- [Progress](https://pusu.js.org/pusu-ui/progress)
-- [Tabs](https://pusu.js.org/pusu-ui/tabs)
-- [Upload](https://pusu.js.org/pusu-ui/upload)
+- [Alert](https://pusu.js.org/alert)
+- [AutoComplete](https://pusu.js.org/autocomplete)
+- [Button](https://pusu.js.org/button)
+- [Icon](https://pusu.js.org/icon)
+- [Input](https://pusu.js.org/input)
+- [Menu](https://pusu.js.org/menu)
+- [Message](https://pusu.js.org/message)
+- [Progress](https://pusu.js.org/progress)
+- [Tabs](https://pusu.js.org/tabs)
+- [Upload](https://pusu.js.org/upload)
 
 
 ## 🔨 Install 安装
