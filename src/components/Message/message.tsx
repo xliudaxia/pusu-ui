@@ -83,7 +83,7 @@ export const Message: FC<MessageProps> & {
       </div>
     </div>
   );
-  return ReactDOM.createPortal(MessageDOM, document.body);
+  return MessageDOM;
 };
 
 let containerNode: HTMLElement | null;

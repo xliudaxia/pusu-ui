@@ -1,3 +1,14 @@
+.container {
+  position: fixed;
+  right: 0;
+  top: 8px;
+  height: 500px;
+  left: 0;
+  z-index: 999;
+  user-select: none;
+  pointer-events: none;
+}
+
 .pusu-message {
   display: block;
   margin: 12px auto;
@@ -41,15 +52,4 @@
     pointer-events: none;
     animation: pusu-fade-out 0.3s both;
   }
-}
-
-.container {
-  position: fixed;
-  right: 0;
-  top: 8px;
-  height: 500px;
-  left: 0;
-  z-index: 999;
-  user-select: none;
-  pointer-events: none;
 }
