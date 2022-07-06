@@ -9,46 +9,10 @@ import "pusu-ui/dist/index.css";
 
 const GridBox = (props) => <div style={{ margin: 20 }}>{props.children}</div>;
 
-const ControlledInput = () => {
-  const [value, setValue] = useState("");
-  return (
-    <Input
-      value={value}
-      defaultValue={value}
-      onChange={(e) => {
-        setValue(e.target.value);
-      }}
-    />
-  );
-};
-
 export default () => (
   <>
     <GridBox>
-      <Input style={{ width: "300px" }} placeholder="placeholder" />
-    </GridBox>
-    <GridBox>
-      <ControlledInput />
-    </GridBox>
-    <GridBox></GridBox>
-    <GridBox></GridBox>
-  </>
-);
-```
-
-### 被禁用 Input
-
-```tsx
-import React, { useState } from "react";
-import { Input } from "pusu-ui";
-import "pusu-ui/dist/index.css";
-
-const GridBox = (props) => <div style={{ margin: 20 }}>{props.children}</div>;
-
-export default () => (
-  <>
-    <GridBox>
-      <Input style={{ width: "300px" }} placeholder="disabled input" disabled />
+      <Input style={{ width: "300px" }} placeholder="请输入内容" />
     </GridBox>
   </>
 );
@@ -68,7 +32,7 @@ export default () => (
     <GridBox>
       <Input
         style={{ width: "300px" }}
-        placeholder="input with icon"
+        placeholder="请输入内容"
         icon="search"
       />
     </GridBox>
@@ -88,10 +52,10 @@ const GridBox = (props) => <div style={{ margin: 20 }}>{props.children}</div>;
 export default () => (
   <>
     <GridBox>
-      <Input style={{ width: "300px" }} defaultValue="large size" size="lg" />
+      <Input style={{ width: "300px" }} placeholder="请输入内容"  size="lg" />
     </GridBox>
     <GridBox>
-      <Input style={{ width: "300px" }} placeholder="small size" size="sm" />
+      <Input style={{ width: "300px" }} placeholder="请输入内容" size="sm" />
     </GridBox>
   </>
 );
@@ -111,12 +75,30 @@ export default () => (
     <GridBox>
       <Input
         style={{ width: "300px" }}
-        defaultValue="prepend text"
+        placeholder="请输入内容"
         prepend="https://"
       />
     </GridBox>
     <GridBox>
-      <Input style={{ width: "300px" }} defaultValue="google" append=".com" />
+      <Input style={{ width: "300px" }} placeholder="请输入内容" append=".com" />
+    </GridBox>
+  </>
+);
+```
+
+### 被禁用 Input
+
+```tsx
+import React, { useState } from "react";
+import { Input } from "pusu-ui";
+import "pusu-ui/dist/index.css";
+
+const GridBox = (props) => <div style={{ margin: 20 }}>{props.children}</div>;
+
+export default () => (
+  <>
+    <GridBox>
+      <Input style={{ width: "300px" }} placeholder="请输入内容" disabled />
     </GridBox>
   </>
 );

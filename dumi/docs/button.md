@@ -13,18 +13,15 @@ const GridBox = (props) => (
 const LayoutCSS = { marginBottom: 20, marginRight: 20 };
 
 const GhostGrid = (props) => (
-  <span
+  <div
     style={{
-      background: "gray",
-      borderRadius: 5,
-      paddingLeft: 7,
-      paddingRight: 7,
-      paddingTop: 13,
-      paddingBottom: 17,
+      padding: 5,
+      width:80,
+      background: "rgb(190, 200, 200)",
     }}
   >
     {props.children}
-  </span>
+  </div>
 );
 
 export default () => (
@@ -41,7 +38,6 @@ export default () => (
     <Button style={LayoutCSS} btnType="link" href="https://www.baidu.com">
       Link
     </Button>
-    <br/>
     <GhostGrid>
       <Button btnType="ghost">Ghost</Button>
     </GhostGrid>
@@ -85,18 +81,15 @@ import "pusu-ui/dist/index.css";
 const LayoutCSS = { marginBottom: 20, marginRight: 20 };
 
 const GhostGrid = (props) => (
-  <span
+  <div
     style={{
-      background: "gray",
-      borderRadius: 5,
-      paddingLeft: 7,
-      paddingRight: 7,
-      paddingTop: 13,
-      paddingBottom: 17,
+      padding: 5,
+      width:100,
+      background: "rgb(190, 200, 200)",
     }}
   >
     {props.children}
-  </span>
+  </div>
 );
 
 export default () => (
@@ -110,7 +103,7 @@ export default () => (
     <Button style={LayoutCSS} icon="fire" btnType="danger">
       Danger
     </Button>
-    <br/>
+    <br />
     <GhostGrid>
       <Button icon="ghost" btnType="ghost">
         Ghost
@@ -134,18 +127,15 @@ const GridBox = (props) => (
 const LayoutCSS = { marginBottom: 20, marginRight: 20 };
 
 const GhostGrid = (props) => (
-  <span
+  <div
     style={{
-      background: "gray",
-      borderRadius: 5,
-      paddingLeft: 7,
-      paddingRight: 7,
-      paddingTop: 13,
-      paddingBottom: 17,
+      padding: 5,
+      width:100,
+      background: "rgb(190, 200, 200)",
     }}
   >
     {props.children}
-  </span>
+  </div>
 );
 
 export default () => {
@@ -175,7 +165,7 @@ export default () => {
       >
         点击试试
       </Button>
-      <br/>
+      <br />
       <GhostGrid>
         <Button loading btnType="ghost">
           Ghost
@@ -196,18 +186,15 @@ import "pusu-ui/dist/index.css";
 const LayoutCSS = { marginBottom: 20, marginRight: 20 };
 
 const GhostGrid = (props) => (
-  <span
+  <div
     style={{
-      background: "gray",
-      borderRadius: 5,
-      paddingLeft: 7,
-      paddingRight: 7,
-      paddingTop: 13,
-      paddingBottom: 17,
+      padding: 5,
+      width:80,
+      background: "rgb(190, 200, 200)",
     }}
   >
     {props.children}
-  </span>
+  </div>
 );
 
 export default () => (
@@ -229,7 +216,7 @@ export default () => (
     >
       Link
     </Button>
-    <br/>
+    <br />
     <GhostGrid>
       <Button disabled btnType="ghost">
         Ghost
