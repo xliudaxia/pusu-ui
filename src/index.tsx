@@ -11,3 +11,4 @@ export { default as Alert } from "./components/Alert";
 export { default as Tabs } from "./components/Tabs";
 export { TabsItem } from "./components/Tabs/tabsItem";
 export { default as Message } from './components/Message'
+export { default as Select } from './components/Select'

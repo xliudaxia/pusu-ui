@@ -1,7 +1,8 @@
+@import "../../styles/variables";
+
 .pusu-input-wrapper {
   display: flex;
   width: 100%;
-  margin-bottom: 30px;
   position: relative;
   .icon-wrapper {
     position: absolute;
@@ -59,6 +60,9 @@
     // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
     opacity: 1;
   }
+}
+.pusu-input-inner::placeholder{
+  color:$gray-500;
 }
 .pusu-input-group-prepend,
 .pusu-input-group-append {

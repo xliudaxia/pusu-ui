@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import React, { FC } from "react";
 import { CSSTransition } from "react-transition-group";
 import { CSSTransitionProps } from "react-transition-group/CSSTransition";
@@ -16,10 +17,10 @@ type TransitionProps<
 };
 
 const Transition: FC<TransitionProps> = (props) => {
-  const { children, classNames, animation, wrapper, ...restProps } = props;
+  const { children, className, animation, wrapper, ...restProps } = props;
   return (
     <CSSTransition
-      classNames={animation ? classNames : animation}
+      classNames={animation ? classNames(className,animation) : animation}
       {...restProps}
     >
       {wrapper ? <div>{children}</div> : children}
