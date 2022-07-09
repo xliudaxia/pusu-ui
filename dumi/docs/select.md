@@ -4,7 +4,7 @@
 
 ```tsx
 import React from "react";
-import { Select } from "../../src/index";
+import { Select } from "pusu-ui";
 import "pusu-ui/dist/index.css";
 
 const { Option } = Select;
@@ -24,15 +24,15 @@ export default () => (
 
 ```tsx
 import React from "react";
-import { Select } from "../../src/index";
+import { Select } from "pusu-ui";
 import "pusu-ui/dist/index.css";
 
 const { Option } = Select;
 
 export default () => (
   <>
-    <Select defaultValue="jack" style={{ width: 300 }}>
-      <Option value="Jack">Jack</Option>
+    <Select defaultValue="jack 🤗" style={{ width: 300 }}>
+      <Option value="Jack 🤗">Jack</Option>
       <Option value="Lucy">Lucy</Option>
       <Option value="yiminghe">yiminghe</Option>
     </Select>
@@ -44,14 +44,14 @@ export default () => (
 
 ```tsx
 import React from "react";
-import { Select } from "../../src/index";
+import { Select } from "pusu-ui";
 import "pusu-ui/dist/index.css";
 
 const { Option } = Select;
 
 export default () => (
   <>
-    <Select disabled defaultValue="jack" style={{ width: 300 }}>
+    <Select disabled defaultValue="Jack" style={{ width: 300 }}>
       <Option value="Jack">Jack</Option>
       <Option value="Lucy">Lucy</Option>
       <Option value="yiminghe">yiminghe</Option>
@@ -65,7 +65,7 @@ export default () => (
 
 ```tsx
 import React from "react";
-import { Select } from "../../src/index";
+import { Select } from "pusu-ui";
 import "pusu-ui/dist/index.css";
 
 const { Option } = Select;
